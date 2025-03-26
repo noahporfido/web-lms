@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function IndexPage() {
   return (
     <main className="grid grid-cols-1 md:grid-cols-2 h-full">
-      <div className="relative h-screen md:h-full">
+      <div className="relative h-screen md:h-full flex flex-col items-center">
         <Image
           src={"/LMS-Video.gif"}
           alt="LMS Logo"
