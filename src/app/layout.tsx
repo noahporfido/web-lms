@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="en">
       <SpeedInsights />
       <body
-        className={`${drukWideBold.className} ${drukWideBold.className} antialiased  w-screen h-screen`}
+        className={`${drukWideBold.className} ${drukWideBold.className} antialiased  w-screen h-screen relative`}
       >
         {children}
       </body>

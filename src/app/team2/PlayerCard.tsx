@@ -10,11 +10,11 @@ export default function PlayerCard({ player }: PlayerCardProps) {
   const { image, name } = player;
 
   return (
-    <div className="relative w-full h-[400px] cursor-pointer group overflow-hidden col-span-1">
+    <div className="relative w-full h-[400px] cursor-pointer group overflow-hidden col-span-1 ">
       {image && (
         <Image
           src={urlFor(image).width(300).url()}
-          className="object-cover inset-0 w-full h-full will-change-transform scale-100 transition-transform duration-500 ease-in-out group-hover:scale-110"
+          className="object-cover inset-0 w-full h-full will-change-transform scale-100 transition-all duration-500 ease-in-out group-hover:scale-110 grayscale hover:grayscale-0"
           alt={name || "Player image"}
           fill
           priority
