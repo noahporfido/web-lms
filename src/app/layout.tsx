@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import localFont from "next/font/local";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { Analytics } from "@vercel/analytics/react";
 
 const drukWideBold = localFont({
   src: "./fonts/DrukWideBold.ttf",
@@ -24,6 +25,7 @@ export default function RootLayout({
       <body
         className={`${drukWideBold.className} ${drukWideBold.className} antialiased  w-screen h-screen`}
       >
+        <Analytics />
         {children}
       </body>
     </html>
